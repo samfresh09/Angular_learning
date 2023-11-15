@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AproposSessionComponent {
 
+  fastDelivery: string = "Livraison rapide";
+
+  freeShiping: string = "Livraison gratuite";
+
+  getFreeShiping(): string {
+    return this.freeShiping;
+  }
 }

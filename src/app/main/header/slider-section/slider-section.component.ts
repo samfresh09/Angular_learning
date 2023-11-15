@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class SliderSectionComponent {
 
+  pathSite: string = "https://www.ipnetuniversity.com/";
+
+  getPathSite(): string {
+    return this.pathSite;
+  }
+
+
+
 }
