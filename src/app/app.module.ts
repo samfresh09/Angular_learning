@@ -8,6 +8,11 @@ import { BodyComponent } from './main/body/body.component';
 import { FooterComponent } from './main/footer/footer.component';
 import { HeaderSectionComponent } from './main/header/header-section/header-section.component';
 import { SliderSectionComponent } from './main/header/slider-section/slider-section.component';
+import { AproposSessionComponent } from './main/body/apropos-session/apropos-session.component';
+import { NouveauteSessionComponent } from './main/body/nouveaute-session/nouveaute-session.component';
+import { NosProduitsSessionComponent } from './main/body/nos-produits-session/nos-produits-session.component';
+import { SouscriptionSessionComponent } from './main/body/souscription-session/souscription-session.component';
+import { TemoignageSessionComponent } from './main/body/temoignage-session/temoignage-session.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +22,12 @@ import { SliderSectionComponent } from './main/header/slider-section/slider-sect
     BodyComponent,
     FooterComponent,
     HeaderSectionComponent,
-    SliderSectionComponent
+    SliderSectionComponent,
+    AproposSessionComponent,
+    NouveauteSessionComponent,
+    NosProduitsSessionComponent,
+    SouscriptionSessionComponent,
+    TemoignageSessionComponent
 
   ],
   imports: [
