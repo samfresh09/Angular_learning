@@ -13,6 +13,7 @@ import { NouveauteSessionComponent } from './main/body/nouveaute-session/nouveau
 import { NosProduitsSessionComponent } from './main/body/nos-produits-session/nos-produits-session.component';
 import { SouscriptionSessionComponent } from './main/body/souscription-session/souscription-session.component';
 import { TemoignageSessionComponent } from './main/body/temoignage-session/temoignage-session.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { TemoignageSessionComponent } from './main/body/temoignage-session/temoi
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

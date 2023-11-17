@@ -211,8 +211,8 @@
                  </svg>
               </div>
               <div class="detail-box">
-                 <h5>
-                   {{getFreeShiping()}}
+                 <h5 (mouseover)="getNewFreeShipping()" (mouseout)="getFreeShiping()">
+                   {{freeShiping}}
                  </h5>
                  <p>
                     variations of passages of Lorem Ipsum available

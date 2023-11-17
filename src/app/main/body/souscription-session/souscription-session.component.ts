@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class SouscriptionSessionComponent {
 
+  emailUser: string = "sajkjdbdlk";
+  afficherEmail(){
+    console.log(this.emailUser);
+  }
+
 }

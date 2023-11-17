@@ -11,7 +11,11 @@ export class AproposSessionComponent {
 
   freeShiping: string = "Livraison gratuite";
 
-  getFreeShiping(): string {
-    return this.freeShiping;
+  getFreeShiping() {
+    this.freeShiping = "Livraison rapide";
+  }
+
+  getNewFreeShipping() {
+    this.freeShiping="event binding ";
   }
 }
