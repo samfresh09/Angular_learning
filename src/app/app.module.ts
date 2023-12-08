@@ -14,6 +14,8 @@ import { NosProduitsSessionComponent } from './main/body/nos-produits-session/no
 import { SouscriptionSessionComponent } from './main/body/souscription-session/souscription-session.component';
 import { TemoignageSessionComponent } from './main/body/temoignage-session/temoignage-session.component';
 import { FormsModule } from '@angular/forms';
+import { ProductService } from './services/product.service';
+
 
 @NgModule({
   declarations: [
@@ -28,14 +30,17 @@ import { FormsModule } from '@angular/forms';
     NouveauteSessionComponent,
     NosProduitsSessionComponent,
     SouscriptionSessionComponent,
-    TemoignageSessionComponent
+    TemoignageSessionComponent,
+
 
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    ProductService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

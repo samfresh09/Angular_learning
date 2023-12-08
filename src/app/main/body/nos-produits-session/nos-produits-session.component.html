@@ -7,8 +7,8 @@
      </div>
      <div class="row">
 
-      <ng-container *ngFor="let product of produits">
-        <ng-container *ngIf="product.prix> 1500">
+      <ng-container *ngFor="let product of produits|slice:1:4 ; let indexProduit=index;">
+        <!-- <ng-container *ngIf="product.prix> 1500"> -->
           <div class="col-sm-6 col-md-4 col-lg-4" >
             <div class="box">
                 <div class="option_container">
@@ -25,17 +25,21 @@
                   <img [src]="product.image" alt="">
                 </div>
                 <div class="detail-box">
-                  <h5>
-                      {{product.libelle}}
+                  <h5 [ngClass]="{
+                    'text-yellow': !product.isDisponible,
+                    'text-success': product.isDisponible
+                  }"
+                  >
+                    {{indexProduit+1}}  {{product.libelle}}
                   </h5>
                   <h6>
-                      {{product.prix}} FCFA
+                      {{product.prix}} FCFA {{datenow|date:'dd/MM/yyyy'}}
                   </h6>
                 </div>
             </div>
           </div>
 
-        </ng-container>
+        <!-- </ng-container> -->
 
 
       </ng-container>

@@ -11,6 +11,6 @@ export class Produit {
     this.image = '';
     this.libelle = '';
     this.prix = 0;
-    this.isDisponible = true;
+    this.isDisponible = false;
   }
 }
